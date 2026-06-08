@@ -1,0 +1,187 @@
+import type { PortfolioPost } from "@/types/portfolio";
+
+/** Images go in `public/images/achievements/<slug>/` */
+const a = (slug: string, file: string) => `/images/achievements/${slug}/${file}`;
+
+export const achievements: PortfolioPost[] = [
+  {
+    id: "xr-hackathon-winner",
+    slug: "xr-hackathon-winner",
+    title: "XR Hackathon Winner",
+    description:
+      "Won the XR Hackathon by building a ICU Operation Simulator. Yayyy 😃",
+    thumbnail: a("xr-hackathon-winner", "thumbnail.jpg"),
+    thumbnailFallback: "/images/achievements/image.png",
+    
+    technologies: ["Unity", "C#", "XR", "3D Interaction"],
+    eventDate: "2024",
+    outcome: "Winner — XR Hackathon",
+    skillsGained: ["XR prototyping", "Rapid demo building", "Team collaboration"],
+    slides: [
+      {
+        id: "xr-1",
+        type: "screenshot",
+        alt: "XR Hackathon winning project",
+        visual: a("xr-hackathon-winner", "slide-1.jpg"),
+        fallback: "/images/achievements/xr-hackathon-winner/slide-1.jpg",
+        caption: "Winning XR project",
+      },
+      {
+        id: "xr-2",
+        type: "video",
+        alt: "ICU Operation Simulator Demonstration",
+        visual: a("xr-hackathon-winner", "slide-2.mp4"),
+        fallback: "/images/achievements/xr-hackathon-winner/slide-1.jpg",
+        caption: "Simulator demo video",
+      },
+    ],
+  },
+  {
+    id: "decodex-nl-dalmia-top-10",
+    slug: "decodex-nl-dalmia-top-10",
+    title: "DecodeX @ NL Dalmia — Top 10",
+    description:
+      "Placed in the top 10 at DecodeX hosted at NL Dalmia, one of the best events till date that I was a part of, had a lot of fun.",
+    thumbnail: a("decodex-nl-dalmia-top-10", "thumbnail.jpg"),
+    thumbnailFallback: "linear-gradient(135deg, #7048e8 0%, #364fc7 100%)",
+    technologies: ["Python", "React", "APIs", "Team Leadership"],
+    eventDate: "2025",
+    outcome: "Top 10 — DecodeX, NL Dalmia",
+    skillsGained: ["Hackathon strategy", "Pitch delivery", "Full-stack prototyping"],
+    slides: [
+      {
+        id: "dx-1",
+        type: "screenshot",
+        alt: "DecodeX NL Dalmia event",
+        visual: a("decodex-nl-dalmia-top-10", "slide-1.jpg"),
+        fallback: "linear-gradient(135deg, #7048e8 0%, #364fc7 100%)",
+        caption: "DecodeX top 10",
+      },
+      {
+        id: "dx-2",
+        type: "screenshot",
+        alt: "DecodeX NL Dalmia event",
+        visual: a("decodex-nl-dalmia-top-10", "slide-2.jpg"),
+        fallback: "linear-gradient(135deg, #7048e8 0%, #364fc7 100%)",
+        caption: "DecodeX top 10",
+      },
+      {
+        id: "dx-3",
+        type: "screenshot",
+        alt: "DecodeX NL Dalmia event",
+        visual: a("decodex-nl-dalmia-top-10", "slide-3.jpg"),
+        fallback: "linear-gradient(135deg, #7048e8 0%, #364fc7 100%)",
+        caption: "DecodeX top 10",
+      },
+    ],
+  },
+  {
+    id: "competitive-programming",
+    slug: "competitive-programming",
+    title: "Competitive Programming",
+    description:
+      "Active competitive programmer with 1500 Codeforces rating, ranked 159 and 425 on codechef as well.",
+    thumbnail: a("competitive-programming", "thumbnail.jpg"),
+    thumbnailFallback: "linear-gradient(135deg, #ff8c00 0%, #cc7000 100%)",
+    technologies: ["C++", "Algorithms", "Data Structures", "Codeforces"],
+    eventDate: "Ongoing",
+    outcome: "1500+ Codeforces rating · regular contest participation",
+    skillsGained: ["Advanced algorithms", "Contest strategy", "Problem decomposition"],
+    slides: [
+      {
+        id: "cp-1",
+        type: "screenshot",
+        alt: "Competitive programming profile",
+        visual: a("competitive-programming", "slide-1.jpg"),
+        fallback: "linear-gradient(135deg, #ff8c00 0%, #1a1a1a 100%)",
+        caption: "Rating & contest activity",
+      },
+      {
+        id: "cp-2",
+        type: "screenshot",
+        alt: "Competitive programming profile",
+        visual: a("competitive-programming", "slide-2.jpg"),
+        fallback: "linear-gradient(135deg, #ff8c00 0%, #1a1a1a 100%)",
+        caption: "Rating & contest activity",
+      },
+      {
+        id: "cp-3",
+        type: "screenshot",
+        alt: "Competitive programming profile",
+        visual: a("competitive-programming", "slide-3.jpg"),
+        fallback: "linear-gradient(135deg, #ff8c00 0%, #1a1a1a 100%)",
+        caption: "Rating & contest activity",
+      },
+    ],
+  },
+  {
+    id: "iitb-i-hack-top-8",
+    slug: "iitb-i-hack-top-8",
+    title: "IITB i-hack — Top 8",
+    description:
+      "Secured a top 8 finish at IIT Bombay's i-hack, where we presented our solution to online gaming misuse and cyber bullying.",
+    thumbnail: a("iitb-i-hack-top-8", "thumbnail.jpg"),
+    thumbnailFallback: "linear-gradient(135deg, #099268 0%, #087f5b 100%)",
+    technologies: ["C++", "Python", "System Design"],
+    eventDate: "2025",
+    outcome: "Top 8 — IITB i-hack",
+    skillsGained: ["High-pressure problem solving", "Contest teamwork", "Optimization"],
+    slides: [
+      {
+        id: "ih-1",
+        type: "screenshot",
+        alt: "IITB i-hack achievement",
+        visual: a("iitb-i-hack-top-8", "slide-1.jpg"),
+        fallback: "linear-gradient(135deg, #099268 0%, #087f5b 100%)",
+        caption: "IITB i-hack top 8",
+      },
+      {
+        id: "ih-2",
+        type: "screenshot",
+        alt: "IITB i-hack achievement",
+        visual: a("iitb-i-hack-top-8", "slide-2.jpg"),
+        fallback: "linear-gradient(135deg, #099268 0%, #087f5b 100%)",
+        caption: "IITB i-hack top 8",
+      },
+      {
+        id: "ih-3",
+        type: "screenshot",
+        alt: "IITB i-hack achievement",
+        visual: a("iitb-i-hack-top-8", "slide-3.jpg"),
+        fallback: "linear-gradient(135deg, #099268 0%, #087f5b 100%)",
+        caption: "IITB i-hack top 8",
+      },
+    ],
+  },
+  {
+    id: "all-years-cs-contest",
+    slug: "all-years-cs-contest",
+    title: "All Years CS Contest",
+    description:
+      "Competed in a contest for all year students, and won as a 2nd year student. I was not available during prize distribution 😭",
+    thumbnail: a("all-years-cs-contest", "thumbnail.jpg"),
+    thumbnailFallback: "linear-gradient(135deg, #4dabf7 0%, #1971c2 100%)",
+    technologies: ["Python", "Computer Science", "Problem Solving"],
+    eventDate: "2024",
+    outcome: "All Years CS Contest — Winner",
+    // skillsGained: ["Core CS fundamentals", "Timed problem solving", "Exam-style CP"],
+    slides: [
+      {
+        id: "ay-1",
+        type: "screenshot",
+        alt: "All Years CS Contest",
+        visual: a("all-years-cs-contest", "slide-1.jpg"),
+        fallback: "linear-gradient(135deg, #4dabf7 0%, #1971c2 100%)",
+        caption: "Contest performance",
+      },
+      {
+        id: "ay-2",
+        type: "screenshot",
+        alt: "All Years CS Contest",
+        visual: a("all-years-cs-contest", "slide-2.jpg"),
+        fallback: "linear-gradient(135deg, #4dabf7 0%, #1971c2 100%)",
+        caption: "Contest performance",
+      },
+    ],
+  },
+];
