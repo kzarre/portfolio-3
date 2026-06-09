@@ -31,6 +31,9 @@ export function PostGrid({ posts, onPostClick }: PostGridProps) {
           <PostTile post={post} onClick={() => onPostClick(post)} />
         </div>
       ))}
+      {Array.from({ length: (3 - (posts.length % 3)) % 3 }).map((_, index) => (
+        <div key={`empty-${index}`} className="bg-background md:bg-transparent" />
+      ))}
     </div>
   );
 }

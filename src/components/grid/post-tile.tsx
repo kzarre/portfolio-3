@@ -33,8 +33,8 @@ export function PostTile({ post, onClick }: PostTileProps) {
 
       <div
         className={cn(
-          "absolute inset-0 flex items-center justify-center bg-black/45 p-3 opacity-0 transition-opacity duration-150 pointer-events-none",
-          "group-hover:opacity-100 group-focus-visible:opacity-100"
+          "absolute inset-0 flex items-center justify-center bg-black/35 p-3 transition-opacity duration-150 pointer-events-none",
+          "opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-focus-visible:opacity-100"
         )}
       >
         <span className="text-center text-[14px] font-bold text-white drop-shadow-sm pointer-events-none">

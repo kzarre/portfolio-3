@@ -41,8 +41,8 @@ export function ProfileTabs({ activeTab, onTabChange }: ProfileTabsProps) {
               role="tab"
               aria-label={tab.label}
             >
-              <Icon className="h-[22px] w-[22px] md:h-3 md:w-3 pointer-events-none" />
-              <span className="hidden md:inline text-[12px] font-semibold tracking-[1.5px] uppercase pointer-events-none">
+              <Icon className="hidden md:block h-3 w-3 pointer-events-none" />
+              <span className="block text-[12px] font-semibold tracking-[1px] md:tracking-[1.5px] uppercase pointer-events-none">
                 {tab.label}
               </span>
               {isActive && (

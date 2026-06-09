@@ -63,7 +63,7 @@ export function ImageCarousel({ slides, title }: ImageCarouselProps) {
         <>
           <button
             type="button"
-            className="absolute left-3 top-1/2 z-10 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow md:flex"
+            className="absolute left-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow"
             onClick={scrollPrev}
             aria-label="Previous"
           >
@@ -71,7 +71,7 @@ export function ImageCarousel({ slides, title }: ImageCarouselProps) {
           </button>
           <button
             type="button"
-            className="absolute right-3 top-1/2 z-10 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow md:flex"
+            className="absolute right-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow"
             onClick={scrollNext}
             aria-label="Next"
           >
@@ -85,8 +85,8 @@ export function ImageCarousel({ slides, title }: ImageCarouselProps) {
                 type="button"
                 onClick={() => emblaApi?.scrollTo(index)}
                 className={cn(
-                  "h-[6px] rounded-full bg-white transition-all",
-                  index === selectedIndex ? "opacity-100" : "opacity-40"
+                  "h-[6px] w-[6px] rounded-full bg-white transition-all",
+                  index === selectedIndex ? "opacity-100 animate-pulse" : "opacity-40"
                 )}
                 aria-label={`Slide ${index + 1}`}
               />

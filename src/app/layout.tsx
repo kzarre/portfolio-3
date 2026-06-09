@@ -13,7 +13,7 @@ const instagramFont = Grand_Hotel({
 
 export const metadata: Metadata = {
   title: {
-    default: "Kanishk Kulshrestha (@kanishkkulshrestha) • DevGram",
+    default: "Kanishk Kulshrestha (@kanishkkulshrestha) • Portfolio",
     template: "%s • Kanishk Kulshrestha",
   },
   description:
