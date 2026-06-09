@@ -6,7 +6,7 @@ export const profile: ProfileData = {
 
   location: "Pune, India",
 
-  status: "SWE Intern @ Fiserv",
+  status: "SWE Intern @Fiserv",
 
   bio:
     "I enjoy building systems from scratch, whether that's a ray tracer, or a terminal application.",
@@ -32,7 +32,7 @@ export const profile: ProfileData = {
     {
       id: "resume",
       label: "Resume",
-      url: "/resume/kanishk_kulshrestha_resume.pdf",
+      url: "/resume/Kanishk_Kulshrestha_resume.pdf",
       icon: "resume",
     },
     {
