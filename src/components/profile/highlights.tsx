@@ -32,7 +32,7 @@ export function Highlights({ highlights }: HighlightsProps) {
               rel={isExternal ? "noopener noreferrer" : undefined}
               className="flex w-[64px] shrink-0 flex-col items-center gap-1 md:w-[77px]"
             >
-              <div className="flex h-[56px] w-[56px] items-center justify-center rounded-full border border-border bg-muted md:h-[77px] md:w-[77px] pointer-events-none">
+              <div className="flex h-[5s6px] w-[56px] items-center justify-center rounded-full border border-border bg-muted md:h-[77px] md:w-[77px] pointer-events-none">
                 <Icon className="h-6 w-6 text-foreground md:h-7 md:w-7 pointer-events-none" />
               </div>
               <span className="max-w-full truncate text-[12px] text-foreground pointer-events-none">

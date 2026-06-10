@@ -1,14 +1,12 @@
 "use client";
 
-import { BsGrid3X3, BsPersonSquare } from "react-icons/bs";
-import { RiMovieLine } from "react-icons/ri";
 import type { TabId } from "@/types/portfolio";
 import { cn } from "@/lib/utils";
 
-const tabs: { id: TabId; icon: typeof BsGrid3X3; label: string }[] = [
-  { id: "projects", icon: BsGrid3X3, label: "Projects" },
-  { id: "experience", icon: RiMovieLine, label: "Experience" },
-  { id: "achievements", icon: BsPersonSquare, label: "Achievements" },
+const tabs: { id: TabId; label: string }[] = [
+  { id: "projects", label: "Projects" },
+  { id: "experience", label: "Experience" },
+  { id: "achievements", label: "Achievements" },
 ];
 
 interface ProfileTabsProps {
@@ -19,13 +17,12 @@ interface ProfileTabsProps {
 export function ProfileTabs({ activeTab, onTabChange }: ProfileTabsProps) {
   return (
     <nav
-      className="mt-3 border-t border-border md:mt-12"
+      className="mt-6 border-b border-border md:mt-10"
       role="tablist"
-      aria-label="Profile content"
+      aria-label="Profile sections"
     >
-      <div className="flex md:justify-center md:gap-16">
+      <div className="flex justify-center gap-8 md:gap-12">
         {tabs.map((tab) => {
-          const Icon = tab.icon;
           const isActive = activeTab === tab.id;
 
           return (
@@ -34,19 +31,18 @@ export function ProfileTabs({ activeTab, onTabChange }: ProfileTabsProps) {
               type="button"
               onClick={() => onTabChange(tab.id)}
               className={cn(
-                "relative flex flex-1 md:flex-none items-center justify-center py-[14px] md:py-4 gap-2",
-                isActive ? "text-foreground" : "text-ig-secondary"
+                "relative flex items-center justify-center py-4 px-1 gap-2 transition-colors duration-200 outline-none select-none",
+                isActive ? "text-foreground font-semibold" : "text-muted-foreground hover:text-foreground font-medium"
               )}
               aria-selected={isActive}
               role="tab"
               aria-label={tab.label}
             >
-              <Icon className="hidden md:block h-3 w-3 pointer-events-none" />
-              <span className="block text-[12px] font-semibold tracking-[1px] md:tracking-[1.5px] uppercase pointer-events-none">
+              <span className="block text-[13px] tracking-[1.5px] uppercase">
                 {tab.label}
               </span>
               {isActive && (
-                <span className="absolute inset-x-0 top-0 h-[1.5px] bg-foreground pointer-events-none" />
+                <span className="absolute inset-x-0 bottom-0 h-[2px] bg-primary pointer-events-none rounded-t-full" />
               )}
             </button>
           );
@@ -55,3 +51,4 @@ export function ProfileTabs({ activeTab, onTabChange }: ProfileTabsProps) {
     </nav>
   );
 }
+

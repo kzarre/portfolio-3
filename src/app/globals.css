@@ -1,22 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --ig-bg: #ffffff;
-  --ig-fg: #262626;
-  --ig-secondary: #8e8e8e;
-  --ig-border: #dbdbdb;
-  --ig-link: #00376b;
-  --ig-blue: #0095f6;
-  --ig-like: #ed4956;
-  --ig-hover: #fafafa;
-  --ig-nav-h: 60px;
-  --ig-bottom-nav-h: 50px;
+  --background-hex: #ffffff;
+  --foreground-hex: #09090b;
+  --ig-bg: var(--background-hex);
+  --ig-fg: var(--foreground-hex);
+  --ig-secondary: #71717a;
+  --ig-border: #e4e4e7;
+  --ig-link: #4f46e5;
+  --ig-blue: #6366f1;
+  --ig-like: #f43f5e;
+  --ig-hover: #f4f4f5;
+  --ig-nav-h: 0px;
+  --ig-bottom-nav-h: 0px;
   --background: var(--ig-bg);
   --foreground: var(--ig-fg);
-  --muted: #fafafa;
+  --muted: #f4f4f5;
   --muted-foreground: var(--ig-secondary);
   --border: var(--ig-border);
-  --accent: #efefef;
+  --accent: #f4f4f5;
   --accent-foreground: var(--ig-fg);
   --primary: var(--ig-blue);
   --primary-foreground: #ffffff;
@@ -24,18 +26,20 @@
 }
 
 .dark {
-  --ig-bg: #000000;
-  --ig-fg: #fafafa;
-  --ig-secondary: #a8a8a8;
-  --ig-border: #262626;
-  --ig-link: #e0f1ff;
-  --ig-hover: #121212;
+  --background-hex: #09090b;
+  --foreground-hex: #fafafa;
+  --ig-bg: var(--background-hex);
+  --ig-fg: var(--foreground-hex);
+  --ig-secondary: #a1a1aa;
+  --ig-border: #27272a;
+  --ig-link: #818cf8;
+  --ig-hover: #18181b;
   --background: var(--ig-bg);
   --foreground: var(--ig-fg);
-  --muted: #121212;
+  --muted: #18181b;
   --muted-foreground: var(--ig-secondary);
   --border: var(--ig-border);
-  --accent: #1a1a1a;
+  --accent: #27272a;
   --accent-foreground: var(--ig-fg);
 }
 
@@ -67,77 +71,55 @@ html {
 body {
   background: var(--ig-bg);
   color: var(--ig-fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Premium Button Styling */
 .ig-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  padding: 0 16px;
+  height: 36px;
+  padding: 0 18px;
   border-radius: 8px;
   font-size: 14px;
-  font-weight: 600;
-  background: var(--ig-hover);
-  color: var(--ig-fg);
-  border: none;
+  font-weight: 500;
+  background: var(--muted);
+  color: var(--foreground);
+  border: 1px solid var(--border);
   cursor: pointer;
-  transition: background 0.15s;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ig-btn:hover {
   background: var(--accent);
+  border-color: var(--ig-secondary);
 }
 
-.ig-btn-follow {
+.ig-btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  padding: 0 16px;
+  height: 36px;
+  padding: 0 18px;
   border-radius: 8px;
   font-size: 14px;
-  font-weight: 600;
-  background: var(--ig-blue);
-  color: #ffffff;
+  font-weight: 500;
+  background: var(--primary);
+  color: var(--primary-foreground);
   border: none;
   cursor: pointer;
-  transition: background 0.15s;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ig-btn-follow:hover {
-  background: #1877f2;
-}
-
-.dark .ig-btn {
-  background: #363636;
-}
-
-.dark .ig-btn:hover {
-  background: #4a4a4a;
-}
-
-.ig-search {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  height: 36px;
-  padding: 0 16px;
-  border-radius: 8px;
-  background: var(--ig-hover);
-  color: var(--ig-secondary);
-  font-size: 16px;
-  min-width: 268px;
-}
-
-.dark .ig-search {
-  background: #363636;
+.ig-btn-primary:hover {
+  background: var(--ig-link);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
 }
 
 .scrollbar-hide {
@@ -150,5 +132,24 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 149, 246, 0.2);
+  background: rgba(99, 102, 241, 0.25);
+  color: var(--foreground);
 }
+
+/* Timeline Custom Styles */
+.timeline-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 17px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--border) 0%, var(--border) 80%, transparent 100%);
+}
+
+@media (min-width: 768px) {
+  .timeline-line::before {
+    left: 23px;
+  }
+}
+
