@@ -84,7 +84,7 @@ export const projects: PortfolioPost[] = [
   {
     id: "cli-spotify",
     slug: "cli-spotify",
-    title: "CLI Spotify",
+    title: "Spotify Client on Terminal",
     description:
       "A terminal-based Spotify client for searching, queuing, and controlling music without leaving the command line.",
     thumbnail: p("cli-spotify", "thumbnail.jpg"),
