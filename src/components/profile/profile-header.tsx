@@ -61,12 +61,11 @@ export function ProfileHeader({ profile }: ProfileHeaderProps) {
             <p className="font-semibold text-foreground text-lg">{renderTextWithLinks(profile.status)}</p>
             <p className="max-w-2xl mx-auto md:mx-0 text-foreground/80 font-normal">{renderTextWithLinks(profile.bio)}</p>
             
-            <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-sm pt-2">
-              <span className="text-accent-foreground font-medium">{profile.skillsSummary}</span>
-              <span className="text-muted-foreground">📍 {profile.location}</span>
+            <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-sm pt-2 -mt-[10px]">
+              <p className="text-muted-foreground">{profile.skillsSummary}</p>
             </div>
-
-            <div className="pt-2">
+            <div className="relative -left-[5px] text-accent-foreground font-medium">📍 {profile.location}</div>
+            {/* <div className="pt-2">
               <a
                 href={profile.social.github}
                 target="_blank"
@@ -75,7 +74,7 @@ export function ProfileHeader({ profile }: ProfileHeaderProps) {
               >
                 {profile.social.github.replace("https://", "")}
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

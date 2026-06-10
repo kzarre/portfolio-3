@@ -14,7 +14,7 @@ export const projects: PortfolioPost[] = [
     thumbnail: p("graphic-renderer", "thumbnail.jpg"),
     thumbnailFallback:
       "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
-    technologies: ["C++", "OpenGL", "Linear Algebra", "CMake"],
+    technologies: ["C++", "Scratch", "Geometric Computation", "CMake", "Multithreading"],
     githubUrl: "https://github.com/kzarre/RayLite",
     buildDate: "May 2025",
     features: [
@@ -52,7 +52,7 @@ export const projects: PortfolioPost[] = [
     thumbnail: p("cli-text-editor", "thumbnail.jpg"),
     thumbnailFallback:
       "linear-gradient(135deg, #fab005 0%, #212529 100%)",
-    technologies: ["C", "ncurses", "ANSI Escape Codes"],
+    technologies: ["C", "Text Editor", "ANSI Escape Codes", "POSIX", "CMake"],
     githubUrl: "https://github.com/kzarre/Quanta",
     buildDate: "July 2025",
     features: [
@@ -90,7 +90,7 @@ export const projects: PortfolioPost[] = [
     thumbnail: p("cli-spotify", "thumbnail.jpg"),
     thumbnailFallback:
       "linear-gradient(135deg, #1db954 0%, #191414 100%)",
-    technologies: ["Python", "Go", "Spotify API", "OAuth2"],
+    technologies: ["Python", "Go", "Spotify API", "OAuth2", "Bubble Tea", "Flask"],
     githubUrl: "https://github.com/kzarre/Spotuify",
     buildDate: "October 2025",
     features: [
@@ -119,7 +119,7 @@ export const projects: PortfolioPost[] = [
     thumbnail: p("compiler", "thumbnail.jpg"),
     thumbnailFallback:
       "linear-gradient(135deg, #7950f2 0%, #364fc7 100%)",
-    technologies: ["Python", "PLY", "AST", "Bytecode VM"],
+    technologies: ["Python", "Source-to-Source Compilation", "Lexical Analysis", "Abstract Syntax Processing"],
     githubUrl: "https://github.com/kzarre/JAPL",
     buildDate: "January 2025",
     features: [
@@ -204,7 +204,7 @@ export const projects: PortfolioPost[] = [
     thumbnail: p("hernia-repair-simulator", "thumbnail.jpg"),
     thumbnailFallback:
       "linear-gradient(135deg, #339af0 0%, #1864ab 100%)",
-    technologies: ["C#", "Unity", "3D Modeling", "Medical Simulation"],
+    technologies: ["C#", "Unity", "3D Modeling", "Medical Simulation", "VR"],
     githubUrl: "https://github.com/Shambsri21/Hernia_repair_unity",
     buildDate: "Feb 2025",
     features: [

@@ -6,7 +6,7 @@ export const experiences: PortfolioPost[] = [
   {
     id: "fiserv-internship",
     slug: "fiserv-internship",
-    title: "Software Engineering Analyst Intern @ Fiserv",
+    title: "SWE Intern @ Fiserv",
     description:
   "Spending the summer working on backend systems for merchant transaction infrastructure, building internal tools and learning how software operates at scale inside a global fintech company.",
     thumbnail: e("fiserv-internship", "thumbnail.jpg"),

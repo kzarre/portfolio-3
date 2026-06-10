@@ -24,7 +24,7 @@ export function ProfileMobileHeader() {
         <div className="w-10" />
       )}
       <h1 className="flex-1 text-center text-[16px] font-bold text-foreground">
-        {profile.username}
+        System Developer
       </h1>
       <div className="w-10" />
     </header>
