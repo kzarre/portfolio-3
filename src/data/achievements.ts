@@ -154,7 +154,7 @@ export const achievements: PortfolioPost[] = [
     ],
   },
   {
-    id: "all-years-cs-contest",
+    id: "Winner — all-years-cs-contest",
     slug: "all-years-cs-contest",
     title: "All Years CS Contest",
     description:
