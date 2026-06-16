@@ -154,9 +154,9 @@ export const achievements: PortfolioPost[] = [
     ],
   },
   {
-    id: "Winner — all-years-cs-contest",
+    id: "all-years-cs-contest",
     slug: "all-years-cs-contest",
-    title: "All Years CS Contest",
+    title: "Winner — all-years-cs-contest",
     description:
       "Competed in a contest for all year students, and won as a 2nd year student. I was not available during prize distribution 😭",
     thumbnail: a("all-years-cs-contest", "thumbnail.jpg"),
@@ -172,7 +172,7 @@ export const achievements: PortfolioPost[] = [
         alt: "All Years CS Contest",
         visual: a("all-years-cs-contest", "slide-1.jpg"),
         fallback: "linear-gradient(135deg, #4dabf7 0%, #1971c2 100%)",
-        caption: "Contest performance",
+        caption: "Winner — all-years-cs-contest",
       },
       {
         id: "ay-2",
@@ -180,7 +180,7 @@ export const achievements: PortfolioPost[] = [
         alt: "All Years CS Contest",
         visual: a("all-years-cs-contest", "slide-2.jpg"),
         fallback: "linear-gradient(135deg, #4dabf7 0%, #1971c2 100%)",
-        caption: "Contest performance",
+        caption: "Winner — all-years-cs-contest",
       },
     ],
   },
