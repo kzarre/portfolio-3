@@ -54,6 +54,11 @@ export function ImageCarousel({ slides, title }: ImageCarouselProps) {
                   className="object-contain"
                 />
               </div>
+              {title && (
+                <div className="absolute bottom-12 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-sm py-1.5 px-4 rounded-full text-white text-xs md:text-sm font-medium tracking-wide border border-white/10 max-w-[85%] truncate text-center select-none shadow-md z-20">
+                  {title}
+                </div>
+              )}
             </div>
           ))}
         </div>

@@ -4,7 +4,6 @@ import type { PortfolioPost, TabId } from "@/types/portfolio";
 import { VisualMedia } from "@/components/ui/visual-media";
 import { SiGithub } from "react-icons/si";
 import { HiOutlineArrowTopRightOnSquare, HiOutlinePhoto } from "react-icons/hi2";
-import { cn } from "@/lib/utils";
 
 interface SequenceListProps {
   posts: PortfolioPost[];
@@ -40,7 +39,7 @@ export function SequenceList({ posts, activeTab, onPostClick }: SequenceListProp
           return (
             <div key={post.id} className="relative group/item">
               {/* Timeline Node Dot */}
-              <div className="absolute left-[-22px] md:left-[-27px] top-6 h-4 w-4 md:h-5 md:w-5 rounded-full border-4 border-background bg-primary shadow-sm transition-transform duration-200 group-hover/item:scale-125 z-10" />
+              <div className="absolute left-[-23px] md:left-[-35px] top-6 h-4 w-4 md:h-5 md:w-5 rounded-full border-4 border-background bg-primary shadow-sm transition-transform duration-200 group-hover/item:scale-125 z-10" />
 
               {/* Card Container */}
               <div className="flex flex-col lg:flex-row items-stretch gap-6 bg-muted/20 hover:bg-muted/40 rounded-xl p-5 md:p-6 border border-border transition-all duration-300 hover:shadow-sm">
@@ -119,7 +118,7 @@ export function SequenceList({ posts, activeTab, onPostClick }: SequenceListProp
                     </div>
 
                     {/* Action Links */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 ml-auto">
                       {post.githubUrl && (
                         <a
                           href={post.githubUrl}

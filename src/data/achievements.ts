@@ -32,7 +32,7 @@ export const achievements: PortfolioPost[] = [
         alt: "ICU Operation Simulator Demonstration",
         visual: a("xr-hackathon-winner", "slide-2.mp4"),
         fallback: "/images/achievements/xr-hackathon-winner/slide-1.jpg",
-        caption: "Simulator demo video",
+        caption: "Simulator walkthrough",
       },
     ],
   },

@@ -3,12 +3,11 @@
 import { useCallback, useEffect, useState } from "react";
 import type { PortfolioPost, PostType, TabId } from "@/types/portfolio";
 import { profile, getPostsByTab, getPost } from "@/data";
-import { ProfileMobileHeader } from "@/components/layout/profile-mobile-header";
 import { ProfileHeader } from "./profile-header";
 import { Highlights } from "./highlights";
 import { ProfileTabs } from "./profile-tabs";
 import { ProfileFooter } from "./profile-footer";
-import { PostGrid } from "@/components/grid/post-grid";
+import { SequenceList } from "./sequence-list";
 import { PostModal } from "@/components/modal/post-modal";
 
 interface ProfileClientProps {
@@ -97,12 +96,11 @@ export function ProfileClient({
 
   return (
     <>
-      <ProfileMobileHeader />
-      <div className="mx-auto w-full max-w-[935px] md:px-5 md:pt-[30px]">
+      <div className="mx-auto w-full max-w-[935px] md:px-5">
         <ProfileHeader profile={profile} />
         <Highlights highlights={profile.highlights} />
         <ProfileTabs activeTab={activeTab} onTabChange={handleTabChange} />
-        <PostGrid
+        <SequenceList
           posts={posts}
           activeTab={activeTab}
           onPostClick={handlePostClick}
@@ -117,3 +115,4 @@ export function ProfileClient({
     </>
   );
 }
+

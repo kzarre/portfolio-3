@@ -17,7 +17,7 @@ export const profile: ProfileData = {
   avatar: "/images/profile/avatar.jpg",
 
   stats: {
-    codeforcesRating: "1463",
+    codeforcesRating: "1500+",
     repositories: "20+",
     yearsCoding: "4+",
   },
