@@ -13,12 +13,12 @@ export function ProfileFooter() {
             {profile.social.email}
           </a>
         </p>
-        <p>
+        {/* <p>
           <span className="font-semibold text-foreground">Phone: </span>
           <a href="tel:+919889320379" className="text-foreground hover:text-primary transition-colors font-medium">
             +91-9889320379
           </a>
-        </p>
+        </p> */}
       </div>
     </footer>
   );
